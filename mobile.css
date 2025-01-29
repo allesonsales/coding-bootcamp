@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --Dark-Blue: hsl(240, 38%, 20%);
+    --Grayish-Blue: hsl(240, 18%, 77%);
+}
+
+body {
+    font-family: "inter", sans-serif;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 1rem;
+    background: url(./images/pattern-curve.svg) no-repeat bottom left;
+}
+
+.container {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    text-align: center;
+    gap: 2rem;
+}
+
+.persona {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.persona q {
+    font-size: 1.5rem;
+    color: var(--Dark-Blue);
+    font-weight: 300;
+}
+
+.persona span {
+    font-size: 1rem;
+    font-weight: 200;
+}
+
+.slider {
+    padding: 2rem;
+    background: url(./images/pattern-bg.svg) no-repeat center;
+    background-size: contain;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.persona-img {
+    width: 100%;
+    height: 100%;
+    min-height: 300px;
+    box-shadow: 25px 30px 45px hsla(0, 0%, 2%, 0.238);
+}
+
+.tanya .persona-img {
+    background: url(./images/image-tanya.jpg) no-repeat;
+    background-size: cover;
+    background-position: center top;
+}
+
+.john .persona-img {
+    background: url(./images/image-john.jpg) no-repeat;
+    background-size: cover;
+    background-position: center top;
+}
+
+.slider-nav {
+    position: relative;
+    top: -10px;
+    width: 100px;
+    padding: 1rem;
+    border-radius: 20px;
+    background: white;
+    display: flex;
+    justify-content: space-between;
+}
+
+.hide {
+    display: none;
+}
+
+.attribution { 
+    font-size: 11px;
+    text-align: center; 
+    position: fixed;
+    bottom: 20px;
+}
+
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
